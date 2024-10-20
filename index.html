@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pure menus vertical and horizontal</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+    <style>
+        /* body {
+            background-color: black;
+        } */
+        .custom-vertic {
+            display: inline-block;
+        }
+        .pure-menu-item:hover>.pure-menu-children {
+            display: inline-block; 
+            position: absolute;
+            left: 100%;
+            top: 0;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            z-index: 1;
+        }
+
+        .pure-menu-item img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- horizontal menus -->
+    <div class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item">
+                <img src="studenticon.jpg" height="100px" width="100px" alt="">
+            </li>
+            <li class="pure-menu-item">
+                <a href="#" class="pure-menu-link">Home</a>
+            </li>
+            <li class="pure-menu-item pure-menu-has-children  pure-menu-allow-hover">
+                <a href="#" class="pure-menu-link">Html</a>
+                <ul class="pure-menu-children custom-horizon">
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">intro</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover pure-menu-selected">
+                        <a href="#" class="pure-menu-link">Intro 1</a>
+                        <ul class="pure-menu-children">
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">intro 1.1</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">intro 1.2</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">intro 1.3</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">intro 1.4</a></li>
+                        </ul>
+                    </li>
+                    <li class="pure-menu-item pure-menu-disabled">
+                        <a href="#" class="pure-menu-link">Intro 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">css</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">javascript</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">jquery</a>
+            </li>
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                <a href="#" class="pure-menu-link">Java</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">intro1</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">intro2</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <a href="#" class="pure-menu-link">intro3</a>
+                        <ul class="pure-menu-children">
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">intro 3.1</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">intro 3.2</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">intro 3.2</a></li>
+                        </ul>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">intro4</a>
+                    </li>
+                </ul>
+
+            </li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">php</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">python</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">SQL</a></li>
+            <li class="pure-menu-item"> <a href="#" class="pure-menu-link">React</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Angular</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">C</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">C++</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Bootstrap</a></li>
+            <li class="pure-menu-item"> <a href="#" class="pure-menu-link">My Sql</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Excel</a></li>
+        </ul>
+    </div>
+
+    <!-- vertical menus -->
+    <!-- pure-menu-scrollable  scroll property to be set -->
+    <div class="pure-menu custom-vertic">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-heading">Html</li>
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                <a href="#" class="pure-menu-link">Intro</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Intro 1.1</a></li>
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <a href="#" class="pure-menu-link">Intro 1.2</a>
+                        <ul class="pure-menu-children">
+                            <li class="pure-menu-item"> <a href="#" class="pure-menu-link">Intro 1.2.1</a></li>
+                            <li class="pure-menu-item"> <a href="#" class="pure-menu-link">Intro 1.2.2</a></li>
+                            <li class="pure-menu-item"> <a href="#" class="pure-menu-link">Intro 1.2.3</a></li>
+                        </ul>
+                    </li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Intro 1.3</a></li>
+                </ul>
+            </li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Into 2</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Into 3</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Into 4</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Into 5</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Into 6</a></li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
